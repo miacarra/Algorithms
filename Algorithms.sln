@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumArrayRecursively", "SumArrayRecursively\SumArrayRecursively.csproj", "{29795A43-8C49-4996-9600-054C54347660}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumArrayRecursively", "SumArrayRecursively\SumArrayRecursively.csproj", "{29795A43-8C49-4996-9600-054C54347660}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveFactorial", "RecursiveFactorial\RecursiveFactorial.csproj", "{DC344957-1AE2-4300-8DDD-A61F526D1F47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursiveFactorial", "RecursiveFactorial\RecursiveFactorial.csproj", "{DC344957-1AE2-4300-8DDD-A61F526D1F47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawRecursively", "DrawRecursively\DrawRecursively.csproj", "{6DCC346A-6DE6-4503-A93E-66464395295D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrawRecursively", "DrawRecursively\DrawRecursively.csproj", "{6DCC346A-6DE6-4503-A93E-66464395295D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generate8-bitVectors", "Generate8-bitVectors\Generate8-bitVectors.csproj", "{D425CC65-4F39-4B3E-A006-E36D3CEDDBAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generate8-bitVectors", "Generate8-bitVectors\Generate8-bitVectors.csproj", "{D425CC65-4F39-4B3E-A006-E36D3CEDDBAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LIS", "LIS\LIS.csproj", "{316AFC58-7400-4E1A-95AA-13035C7089E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayOfCommonSubstrings", ",nmjhu\ArrayOfCommonSubstrings.csproj", "{AAC6CBCC-1E71-407F-81F3-95998360E9BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestPalindromicSubstring", "LongestPalindromicSubstring\LongestPalindromicSubstring.csproj", "{7CE25026-1831-4006-A86B-9FB27DDBF303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestPalindromicLength", "LongestPalindromicLength\LongestPalindromicLength.csproj", "{AD830C5E-EF2D-406B-9748-BA95E0EDEEC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{D425CC65-4F39-4B3E-A006-E36D3CEDDBAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D425CC65-4F39-4B3E-A006-E36D3CEDDBAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D425CC65-4F39-4B3E-A006-E36D3CEDDBAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{316AFC58-7400-4E1A-95AA-13035C7089E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316AFC58-7400-4E1A-95AA-13035C7089E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316AFC58-7400-4E1A-95AA-13035C7089E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316AFC58-7400-4E1A-95AA-13035C7089E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAC6CBCC-1E71-407F-81F3-95998360E9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC6CBCC-1E71-407F-81F3-95998360E9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC6CBCC-1E71-407F-81F3-95998360E9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC6CBCC-1E71-407F-81F3-95998360E9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CE25026-1831-4006-A86B-9FB27DDBF303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE25026-1831-4006-A86B-9FB27DDBF303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE25026-1831-4006-A86B-9FB27DDBF303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE25026-1831-4006-A86B-9FB27DDBF303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD830C5E-EF2D-406B-9748-BA95E0EDEEC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD830C5E-EF2D-406B-9748-BA95E0EDEEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD830C5E-EF2D-406B-9748-BA95E0EDEEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD830C5E-EF2D-406B-9748-BA95E0EDEEC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

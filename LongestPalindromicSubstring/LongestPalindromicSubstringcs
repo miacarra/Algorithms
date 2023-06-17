@@ -1,0 +1,87 @@
+﻿using System;
+using System.IO;
+using System.Threading;
+using System.Linq;
+
+namespace LongestPalindromicSubstring
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            int length = input.Length;
+
+            if (input == null || length < 1)
+                Console.WriteLine(" ");
+                
+            
+            int start = 0;
+            int end = 0;
+
+            for (int i = 0; i < length; i++)                            //babad
+            {
+                int oddLength = Expand(input, i, i);
+                
+                if (oddLength > (end-start+1))
+                {
+                    int distance = oddLength/2;
+                    start = i-distance;
+                    end = i + distance;
+                }
+                int evenLength = Expand(input, i, i + 1);
+               
+                if (evenLength > (end - start + 1))
+                {
+                    int distance = evenLength/2;
+                    start = i - distance;
+                    end = i+distance;
+                }
+            }
+
+            for (int i = 0; i <input.Length; i++)
+            {
+                if (i>=start && i<=end)
+                Console.Write(input[i]);
+
+            }
+        }
+        static int Expand(string input,int left,int right)
+        {
+            if (input == null || left > right)
+                return 0;
+            
+            while (left >= 0 && right < input.Length && input[left] == input[right])
+            {
+                left--;
+                right++;
+            }
+            return right-left -1;
+        }
+
+            
+        //    string[,] test = new string[length, length]; 
+        //    for (int i = 0; i < length; i++)
+        //    {
+        //        for (int j = 0; j < length; j++)
+        //        {
+        //            if (input[i] == input[j])
+        //                test[i,j] = "1";
+        //            else
+        //                test[i,j] = "0";
+
+                        
+        //        }
+        //    }
+        
+        //for (int i=0;i< test.GetLength(0);i++)
+        //    { 
+        //for (int j=0;j< test.GetLength(1);j++)
+        //        {
+        //            Console.Write(test[i,j]+' ');
+        //        }
+        //Console.WriteLine();
+        //    }
+        
+    }
+}
